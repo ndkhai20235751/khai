@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HAPPY NEW YEAR 2026! CHÍP</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <div id="rotateNotice" style="display:none;">
+    <div class="overlay">
+      <p>Vui lòng xoay màn hình sang ngang để có trải nghiệm tốt nhất 🌟</p>
+    </div>
+  </div>
+
+  <img id="bear"
+       src="https://i.pinimg.com/originals/e5/c5/4c/e5c54cd43fd75a7ec5b7cf0f65838ec3.gif"
+       alt="Bear" />
+
+  <!-- Nhạc nền -->
+  <audio id="bgMusic" src="nhac.mp3" loop></audio>
+
+  <!-- Script hiệu ứng -->
+  <script src="./style/script.js"></script>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+
+    // 👉 Nếu nhạc đang bật từ index thì tiếp tục phát
+    window.addEventListener("load", () => {
+      if (localStorage.getItem("musicPlaying") === "true") {
+        music.play().catch(err => console.log("Autoplay bị chặn:", err));
+      }
+    });
+
+    // 👉 Sau 26.8 giây chuyển về index1
+    setTimeout(() => {
+      window.location.href = "index1.html";
+    }, 26868);
+  </script>
+
+</body>
+</html>

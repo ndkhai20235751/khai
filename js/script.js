@@ -76,6 +76,12 @@ const imageSources = [
 	"./images/3.png",
 	"./images/4.png",
 	"./images/5.png",
+	"./images/6.png",
+	"./images/7.png",
+	"./images/8.png",
+	"./images/9.png",
+	"./images/10.png",
+	"./images/11.png",
 ];
 const loadedImages = [];
 const imageBursts = [];
@@ -545,14 +551,19 @@ store.subscribe(handleStateChange);
 
 // Mảng câu chúc màu hồng
 const WISH_MESSAGES = [
-	"Năm mới an khang thịnh vượng",
-	"Năm mới bình an",
-	"Chúc mọi điều ước của em đều trở thành hiện thực ✨",
-	"Chúc gia đình em luôn bình an và hạnh phúc ❤️",
-	"Chúc em luôn khỏe mạnh và tràn đầy năng lượng 💪",
-	"Chúc công việc thuận lợi, thăng tiến không ngừng 🚀",
-	"Chúc em luôn mỉm cười và yêu đời mỗi ngày 😊",
-	"Chúc em gặp nhiều may mắn và niềm vui 🎉",
+  "Chúc năm mới an khang, thịnh vượng và ngập tràn niềm vui 🎊",
+  "Chúc em một năm mới bình an, nhẹ nhàng và hạnh phúc 💖",
+  "Mong mọi ước mơ của em đều sớm trở thành hiện thực ✨",
+  "Chúc gia đình em luôn khỏe mạnh, sum vầy, ấm áp và đầy tiếng cười ❤️",
+  "Chúc em luôn mạnh khỏe, tràn đầy năng lượng mỗi ngày 💪",
+  "Mong em luôn giữ tinh thần thoải mái, tự tin vào bản thân và tỏa sáng trong kỳ thi sắp tới. Cố lên nhé, em làm được mà ✨",
+  "Chúc em luôn mỉm cười thật tươi và yêu đời hơn mỗi ngày 😊",
+  "Chúc em gặp thật nhiều may mắn và những điều tuyệt vời nhất 🎉",
+  "Năm mới ngủ không trễ 😴",
+  "học tới đâu hiểu tới đó 📖",
+  "lì xì nhận mỏi tay💸😆",
+  "Chúc em năm mới lúc nào cũng rạng rỡ như ánh nắng đầu xuân"
+
 ];
 
 // Sinh 1 câu chúc bay lên
